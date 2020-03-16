@@ -1,17 +1,18 @@
 # ¿Que hace?
 **Cambia el fondo de pantalla por el de Spotlight de Microsoft, guarda la imagen provisionalmente en la carpeta de imagenes del usuario.**
 
-> Este programa no tiene interfaz, por lo tanto cuando se ejeuta solo vas a ver como una ventana negra se abre y se cierra rapidamente. Solo funciona en Windows 10.
+> Este programa no tiene interfaz, por lo tanto cuando se ejeuta solo vas a ver como una ventana negra se abre y se cierra rapidamente.
 
 
 
 
-*Gracias a esto, NeiSpotlight:*
+*NeiSpotlight:*
 
 - No consume ningun recurso/potencia de tu pc
 - No tiene ningun proceso ejecutandose en segundo plano
 - NeiSpotlight hace su trabajo y se cierra automaticamente para no molestar.
 - Si ya no quieres usarlo solo con borrar la carpeta habras limpiado todo rastro en tu pc. (Si configuraste para que se ejecutara al inicio deberas ejecutar "No ejecutar al inicio.exe", antes de eliminar la carpeta para que no deje rastro)
+-  Solo funciona en Windows 10.
 - Solo ocupa 17 KB (0.017 MB) en tu disco duro.
 > Una foto de 16MP de tu telefono puede ocupar 2840 KB (2.84MB) y una cancion de Spotify unos 9000 KB (9 MB).
 
