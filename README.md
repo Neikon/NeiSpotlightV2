@@ -1,7 +1,7 @@
 # ¿Que hace?
 **Cambia el fondo de pantalla por el de Spotlight de Microsoft, guarda la imagen provisionalmente en la carpeta de imagenes del usuario.**
 
-> Este programa no tiene interfaz, por lo tanto cuando se ejeuta solo vas a ver como una ventana negra se abre y se cierra rapidamente
+> Este programa no tiene interfaz, por lo tanto cuando se ejeuta solo vas a ver como una ventana negra se abre y se cierra rapidamente. Solo funciona en Windows 10.
 
 
 
@@ -29,3 +29,4 @@
 - Para que no se vuelva a ejecutar al inicio solo debes ejecutar "No ejecutar al inicio.exe" y veras como desaparece del administrador de tareas
 
 > Para que NeiSpotlight funcione debe de estar activa la funcion Spotlight de Windows puedes comprobarlo yendo a la Configuración>Pantalla de bloqueo y debes de tenerlo tal que asi <img src="https://raw.githubusercontent.com/Neikon/NeiSpotlightV2/master/Anotaci%C3%B3n%202020-03-16%20230817.png" width="100%" />
+Para Windows sin activar no puedo asegurar su funcionamiento, ya que en teoria sin activar no puedes cambiar el fondo de pantalla.
