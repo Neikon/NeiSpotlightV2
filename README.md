@@ -20,7 +20,8 @@
 
 # Instalación
 
-- Solo debes extraer la carpeta donde quieras y ejecutar NeiSpotlight.exe para que tu fondo de pantalla cambie.
+- Descargalo desde [aqui](https://github.com/Neikon/NeiSpotlightV2/releases "aqui") o desde la pestaña "releases"
+- Extrae la carpeta donde quieras y ejecutar NeiSpotlight.exe para que tu fondo de pantalla cambie.
 - Para que se ejecute automaticamente debes ejecutar una vez "ejecutar al inicio.exe" y podras ver como en el administrador de tareas en la pestaña "Inicio" se agregó NeiSpotlight.
  > **NOTA:** Si una vez hecho esto cambias de sitio la carpeta o los archivos dejará de funcionar. 
   Para volverlo a configurar ejecuta "No ejecutar al inicio.exe" y luego "ejecutar al inicio.exe"
