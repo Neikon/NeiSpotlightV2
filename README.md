@@ -1,7 +1,7 @@
 # ¿Que hace?
 **Cambia el fondo de pantalla por el de Spotlight de Microsoft, guarda la imagen provisionalmente en la carpeta de imagenes del usuario.**
 
-> Este programa no tiene interfaz, por lo tanto cuando se ejeuta solo vas a ver como una ventana negra se abre y se cierra rapidamente.
+> Este programa no tiene interfaz, por lo tanto cuando se ejecuta solo vas a ver como una ventana negra se abre y se cierra rapidamente.
 
 
 
