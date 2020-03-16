@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace NeiSpotlightV2
 {
@@ -20,29 +21,32 @@ namespace NeiSpotlightV2
             //creamos las rutas para el usuario que esta ejecutando el programa
             string path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets";
             string destPath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + @"\NeiSpotlight";
+            //obtenemos el ancho de la pantalla
+            var screenWidth = Screen.PrimaryScreen.Bounds.Width;
             //creamos nuestra carpeta donde guardad las fotos que vamos usando
             System.IO.Directory.CreateDirectory(destPath);
             //buscamos en nuestro directorio  el archivo mas nuevo
             var directory = new DirectoryInfo(path);
-            var myFile = directory.GetFiles()
-                         .OrderByDescending(f => f.LastWriteTime)
-                         .First();
-            
-            //comprobamos que ese archivo es una imagen horizontal (para no coger imagenes de formato movil), si no es horizontal cogerá la siguiente que suele ser horizontal
-            if (Image.FromFile(myFile.FullName).Width < Image.FromFile(myFile.FullName).Height)
+            //vamos a coger todas las imagenes buenas y copiarlas a nuestra carpeta, si ya esta en ella NO se sobreescribira
+            for (int i = 0; i < directory.GetFiles().Length; i++)
             {
-                myFile = directory.GetFiles()
-                         .OrderByDescending(f => f.LastWriteTime)
-                         .ElementAt(1);
+                var myFile = directory.GetFiles().ElementAt(i);
+                var myImage = Image.FromFile(myFile.FullName);
+
+                if (myImage.Width >= screenWidth  )
+                {
+                    var myDestFileJPG = System.IO.Path.Combine(destPath, myFile.Name + ".jpg");
+                    //si el archivo existe en nuestra carpeta no hace nada
+                    if (!System.IO.File.Exists(myDestFileJPG))
+                    {
+                        System.IO.File.Copy(myFile.FullName, myDestFileJPG, false);
+                    }
+                }
             }
-            // cambiamos el nombre del archivo para añadirle la extension jpg
-            string destFileName = myFile.Name + ".jpg";
-            //creamos la ruta donde se va a guardar que nesecita ruta completa y nombre del archivo
-            string destFile = System.IO.Path.Combine(destPath, destFileName);
-            //creamos una copia de nuestra foto en nuestro directorio
-            System.IO.File.Copy(myFile.FullName, destFile, true);
+            //De nuestra carpeta elegiremos la imagen mas reciente 
+            var wallpaper = new DirectoryInfo(destPath).GetFiles().OrderByDescending(f => f.LastWriteTime).First();
             //Ponemos como wallpaper nuestra imagen
-            SystemParametersInfo(0x0014, 0, destFile, 0x0001);
+            SystemParametersInfo(0x0014, 0, wallpaper.FullName, 0x0001);
         }
     }
 }
