@@ -10,7 +10,9 @@
 
 - No consume ningun recurso/potencia de tu pc
 - No tiene ningun proceso ejecutandose en segundo plano
-- Solo ocupa 17 KB (0.017 MB) en tu disco duro. Cuando una foto de 16MP de tu telefono puede ocupar 2840 KB (2.84MB) y una cancion de Spotify unos 9000 KB (9 MB).
+- Solo ocupa 17 KB (0.017 MB) en tu disco duro.
+> Una foto de 16MP de tu telefono puede ocupar 2840 KB (2.84MB) y una cancion de Spotify unos 9000 KB (9 MB).
+-     NeiSpotlight hace su trabajo y se cierra automaticamente para no molestar.
 - NeiSpotlight hace su trabajo y se cierra automaticamente para no molestar.
 - Si ya no quieres usarlo solo con borrar la carpeta habras limpiado todo rastro en tu pc. (Si configuraste para que se ejecutara al inicio deberas ejecutar "No ejecutar al inicio.exe", antes de eliminar la carpeta para que no deje rastro)
 
