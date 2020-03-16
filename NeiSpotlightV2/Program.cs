@@ -28,6 +28,7 @@ namespace NeiSpotlightV2
             //buscamos en nuestro directorio  el archivo mas nuevo
             var directory = new DirectoryInfo(path);
             //vamos a coger todas las imagenes buenas y copiarlas a nuestra carpeta, si ya esta en ella NO se sobreescribira
+            
             for (int i = 0; i < directory.GetFiles().Length; i++)
             {
                 var myFile = directory.GetFiles().ElementAt(i);
