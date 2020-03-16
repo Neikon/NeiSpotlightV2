@@ -27,3 +27,5 @@
   Para volverlo a configurar ejecuta "No ejecutar al inicio.exe" y luego "ejecutar al inicio.exe"
   
 - Para que no se vuelva a ejecutar al inicio solo debes ejecutar "No ejecutar al inicio.exe" y veras como desaparece del administrador de tareas
+
+> Para que NeiSpotlight funcione debe de estar activa la funcion Spotlight de Windows puedes comprobarlo yendo a la Configuración>Pantalla de bloqueo y debes de tenerlo tal que asi <img src="https://raw.githubusercontent.com/Neikon/NeiSpotlightV2/master/Anotaci%C3%B3n%202020-03-16%20230817.png" width="100%" />
